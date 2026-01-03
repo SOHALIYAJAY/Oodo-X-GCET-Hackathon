@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dayflow HRMS Design System - Navy Blue, Blue, Grey, White */
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222 47% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 213 94% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 213 94% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom HRMS colors */
+    --navy: 222 47% 20%;
+    --navy-light: 222 35% 30%;
+    --navy-dark: 222 55% 15%;
+    --blue: 213 94% 50%;
+    --blue-light: 213 94% 60%;
+    --blue-dark: 213 94% 40%;
+    --grey: 220 9% 46%;
+    --grey-light: 220 14% 96%;
+    --grey-medium: 220 13% 91%;
+
+    --sidebar-background: 222 47% 20%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 213 94% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 35% 30%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 222 35% 25%;
+    --sidebar-ring: 213 94% 50%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 0 0% 98%;
+
+    --card: 222 47% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 47% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 213 94% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 35% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 222 35% 20%;
+    --muted-foreground: 220 14% 70%;
+
+    --accent: 213 94% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 222 35% 25%;
+    --input: 222 35% 25%;
+    --ring: 213 94% 50%;
+
+    --sidebar-background: 222 55% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 213 94% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 213 94% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--grey-light));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--grey));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--navy-light));
+}
