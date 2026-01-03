@@ -2,6 +2,12 @@
 
 A full-stack HR management system built with React (Vite), TypeScript, Node.js, Express, and MongoDB.
 
+## 👥 Team Members
+-Jemit Vaghasiya – (Team Leader)
+-Yug Bhensadadiya 
+-Jay Sohaliya
+-Yug Bhungaliya
+
 ## Features
 
 - User authentication (register/login)
